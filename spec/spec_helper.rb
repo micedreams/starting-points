@@ -17,6 +17,7 @@
 
 
 require 'simplecov'
+require 'pry-byebug'
 SimpleCov.start if ENV["COVERAGE"] == "enable"
 
 Dir[File.join("#{File.expand_path(File.dirname(__FILE__))}","..", "lib", "*.rb")].map {|f| require f}
